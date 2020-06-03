@@ -12,7 +12,7 @@
     <classes>
       <class name="com.yourlogo.testcases.SearchPageTest">
       <methods>   
-    <include name="SortByLowestPriceTest" />
+    <include name="QuickViewLinkTest" />
    <!-- <include name="VerifyContinueShopping" /> -->
     </methods>
     </class>
