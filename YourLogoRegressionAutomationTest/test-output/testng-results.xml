@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="36094" started-at="2020-06-05T14:00:04Z" finished-at="2020-06-05T14:00:40Z">
+  <suite name="Suite" duration-ms="67106" started-at="2020-08-13T15:33:13Z" finished-at="2020-08-13T15:34:20Z">
     <groups>
     </groups>
-    <test name="Test in Chrome" duration-ms="36094" started-at="2020-06-05T14:00:04Z" finished-at="2020-06-05T14:00:40Z">
-      <class name="com.yourlogo.testcases.CartPageTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.yourlogo.testcases.CartPageTest@1494225]" name="setup" is-config="true" duration-ms="24554" started-at="2020-06-05T14:00:04Z" finished-at="2020-06-05T14:00:29Z">
+    <test name="Test in Chrome" duration-ms="67106" started-at="2020-08-13T15:33:13Z" finished-at="2020-08-13T15:34:20Z">
+      <class name="com.yourlogo.testcases.SearchPageTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.yourlogo.testcases.SearchPageTest@b9f472]" name="setup" is-config="true" duration-ms="57041" started-at="2020-08-13T15:33:13Z" finished-at="2020-08-13T15:34:10Z">
           <params>
             <param index="0">
               <value>
@@ -18,30 +18,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="precondition()[pri:0, instance:com.yourlogo.testcases.CartPageTest@1494225]" name="precondition" is-config="true" duration-ms="10494" started-at="2020-06-05T14:00:29Z" finished-at="2020-06-05T14:00:39Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@b9f472]" name="setup" is-config="true" duration-ms="5096" started-at="2020-08-13T15:34:10Z" finished-at="2020-08-13T15:34:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="VerifyCartPagetitleTest()[pri:0, instance:com.yourlogo.testcases.CartPageTest@1494225]" name="VerifyCartPagetitleTest" duration-ms="79" started-at="2020-06-05T14:00:39Z" finished-at="2020-06-05T14:00:39Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="LoadPage()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@b9f472]" name="LoadPage" duration-ms="3438" started-at="2020-08-13T15:34:15Z" finished-at="2020-08-13T15:34:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyCartPagetitleTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.CartPageTest@1494225]" name="getResult" is-config="true" duration-ms="0" started-at="2020-06-05T14:00:39Z" finished-at="2020-06-05T14:00:39Z">
+        </test-method> <!-- LoadPage -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.SearchPageTest@b9f472]" name="getResult" is-config="true" duration-ms="0" started-at="2020-08-13T15:34:18Z" finished-at="2020-08-13T15:34:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyCartPagetitleTest status=SUCCESS method=CartPageTest.VerifyCartPagetitleTest()[pri:0, instance:com.yourlogo.testcases.CartPageTest@1494225] output={null}]]]>
+                <![CDATA[[TestResult name=LoadPage status=SUCCESS method=SearchPageTest.LoadPage()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@b9f472] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.CartPageTest@1494225]" name="teardown" is-config="true" duration-ms="728" started-at="2020-06-05T14:00:39Z" finished-at="2020-06-05T14:00:40Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@b9f472]" name="teardown" is-config="true" duration-ms="1242" started-at="2020-08-13T15:34:18Z" finished-at="2020-08-13T15:34:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.yourlogo.testcases.CartPageTest -->
+      </class> <!-- com.yourlogo.testcases.SearchPageTest -->
     </test> <!-- Test in Chrome -->
   </suite> <!-- Suite -->
 </testng-results>

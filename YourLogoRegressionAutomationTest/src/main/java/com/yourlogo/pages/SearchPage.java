@@ -262,6 +262,11 @@ public class SearchPage extends TestBase {
 		  boolean bool=AddToCartMsgCSS.isDisplayed();
 		  return msg;
 	}
+
+	public void addtowishlist() {
+		System.out.println("reached searchpage");
+		
+	}
 	
 	
 }

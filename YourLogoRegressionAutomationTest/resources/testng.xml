@@ -10,9 +10,9 @@
     
 
     <classes>
-      <class name="com.yourlogo.testcases.CartPageTest">
+      <class name="com.yourlogo.testcases.SearchPageTest">
       <methods>   
-    <include name="VerifyCartPagetitleTest" />
+    <include name="LoadPage" />
    <!-- <include name="VerifyContinueShopping" /> -->
     </methods>
     </class>

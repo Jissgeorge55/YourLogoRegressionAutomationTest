@@ -8,14 +8,22 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.yourlogo.pages.GetAPage;
 import com.yourlogo.pages.HomePage;
+import com.yourlogo.pages.LoginPage;
+import com.yourlogo.pages.MyAccountPage;
+import com.yourlogo.pages.PageType;
 import com.yourlogo.pages.SearchPage;
 import selenium.framework.testbase.TestBase;
+import selenium.framework.utilities.ReadConfigFile;
 
 public class SearchPageTest extends TestBase {
 
+	ReadConfigFile readconfig=new ReadConfigFile();
 	HomePage homepage;
 	SearchPage searchpage;
+	LoginPage loginpage;
+	MyAccountPage myaccountpage;
 
 	public SearchPageTest() {
 		super();
@@ -82,7 +90,22 @@ public class SearchPageTest extends TestBase {
 	boolean result = expected.contains(actual);
 		Assert.assertTrue(result);
 	}
+	
+	@Test
+	public void AddToWishlist()
+	{
+		 myaccountpage=loginpage.login(readconfig.getUsername(),readconfig.getPassword());
+		 searchpage=myaccountpage.searchText("Dresses");
+		 searchpage.addtowishlist();
+		 
+	}
 
+	@Test
+	public void LoadPage()
+	{
+		GetAPage.gotopage(PageType.CartPage);
+	}
+	
 	@AfterMethod
 	public void getResult(ITestResult result) throws IOException, InterruptedException
 	{
