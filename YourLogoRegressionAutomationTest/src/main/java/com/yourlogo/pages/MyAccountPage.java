@@ -2,6 +2,7 @@ package com.yourlogo.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import selenium.framework.testbase.TestBase;
 
@@ -12,7 +13,14 @@ public class MyAccountPage extends TestBase {
 	WebElement searchBoxId;
 	//---pageFactory--//
 	
+	@FindBy(name="submit_search")
+	WebElement SubmitButton;
 	
+	
+	public MyAccountPage()
+	{
+		PageFactory.initElements(driver, this);
+	}
 	
 	public String pagetitle()
 	{
@@ -24,6 +32,8 @@ public class MyAccountPage extends TestBase {
 		
 		searchBoxId.clear();
 		searchBoxId.sendKeys(Text);
+		SubmitButton.click();
+		
 		return new SearchPage();
 	}
 

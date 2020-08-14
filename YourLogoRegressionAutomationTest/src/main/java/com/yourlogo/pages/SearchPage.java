@@ -16,11 +16,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import selenium.framework.seleniumElements.SeleniumElements;
+
 import selenium.framework.testbase.TestBase;
 
 public class SearchPage extends TestBase {
 
-	JavascriptExecutor je = (JavascriptExecutor) driver;
+	static JavascriptExecutor je = (JavascriptExecutor) driver;
 
 	@FindBy(xpath = "//li[@class='ajax_block_product col-xs-12 col-sm-6 col-md-4 first-in-line first-item-of-tablet-line first-item-of-mobile-line']")
 	WebElement product1;
@@ -59,6 +61,13 @@ public class SearchPage extends TestBase {
 	
 	@FindBy(css="#layer_cart > div.clearfix > div.layer_cart_cart.col-xs-12.col-md-6 > h2 > span.ajax_cart_product_txt")
 	WebElement AddToCartMsgCSS;
+	
+	@FindBy(id="wishlist_button")
+	WebElement WishListButton;
+	
+	@FindBy(xpath = "//p[contains(text(),'Added to your wishlist.')]")
+	WebElement WishlistSuccessMsg;
+	
 	
 	
 	
@@ -252,9 +261,7 @@ public class SearchPage extends TestBase {
 	}
 
 	public String addtocart() throws InterruptedException {
-		je.executeScript("arguments[0].scrollIntoView();", product1);
-		Actions act = new Actions(driver);
-		act.moveToElement(product1).build().perform();
+		scrollToProduct(product1);
 
 		addtocart.click();
 		Thread.sleep(2000);
@@ -263,8 +270,25 @@ public class SearchPage extends TestBase {
 		  return msg;
 	}
 
-	public void addtowishlist() {
-		System.out.println("reached searchpage");
+	public boolean addtowishlist() {
+		elements.scrollAndHoverToElement(product1, driver);
+		more.click();
+		WishListButton.click();
+		boolean result = WishlistSuccessMsg.isDisplayed();
+		
+		return result;
+		
+		
+		
+	}
+	
+	
+	public void scrollToProduct(WebElement product)
+	{
+		elements.scrollToElement(product,driver);
+		//je.executeScript("arguments[0].scrollIntoView();", product);
+		Actions act = new Actions(driver);
+		act.moveToElement(product).build().perform();
 		
 	}
 	

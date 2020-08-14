@@ -94,9 +94,12 @@ public class SearchPageTest extends TestBase {
 	@Test
 	public void AddToWishlist()
 	{
-		 myaccountpage=loginpage.login(readconfig.getUsername(),readconfig.getPassword());
+		loginpage= (LoginPage) GetAPage.gotopage(PageType.LoginPage);
+		myaccountpage=loginpage.login(readconfig.getUsername(),readconfig.getPassword());
 		 searchpage=myaccountpage.searchText("Dresses");
-		 searchpage.addtowishlist();
+		 boolean expected = searchpage.addtowishlist();
+		 
+		 Assert.assertTrue(expected);
 		 
 	}
 

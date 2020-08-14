@@ -6,29 +6,30 @@ public class GetAPage extends TestBase {
 	static Object page;
 
 	
-	public static void gotopage(PageType PageType)
+	public static Object gotopage(PageType PageType)
 	{
 		switch(PageType) {
 		
 		case LoginPage:
 		
-			GetAPage.LoginPage(PageType);
+			page = GetAPage.LoginPage(PageType);
 			break;
 			
 		case MyAccountPage:
 				
-			GetAPage.MyAccountPage(PageType);
+			page=GetAPage.MyAccountPage(PageType);
 			break;	
 				
 			
 		case CartPage:
-			GetAPage.CartPage(PageType);
+			page=GetAPage.CartPage(PageType);
 			break;
+			
 			
 		
 		}
 		
-			
+		return page;	
 	}
 		
 		

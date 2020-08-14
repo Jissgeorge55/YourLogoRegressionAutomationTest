@@ -12,7 +12,7 @@
     <classes>
       <class name="com.yourlogo.testcases.SearchPageTest">
       <methods>   
-    <include name="LoadPage" />
+    <include name="AddToWishlist" />
    <!-- <include name="VerifyContinueShopping" /> -->
     </methods>
     </class>

@@ -139,6 +139,16 @@ public class SeleniumElements  {
 		JavascriptExecutor js = (JavascriptExecutor) (WebDriver) driver;
 		js.executeScript("arguments[0].scrollIntoView();",element);
 	}
+	
+	
+	public void scrollAndHoverToElement(WebElement element,Object driver)
+	{
+		JavascriptExecutor js = (JavascriptExecutor) (WebDriver) driver;
+		js.executeScript("arguments[0].scrollIntoView();",element);
+		Actions act = new Actions((WebDriver) driver);
+		act.moveToElement(element).build().perform();
+	}
+	
 
 	public WebElement findByXpath(String locator, Object driver) {
 		WebDriver seleniumDriver = (WebDriver) driver;
