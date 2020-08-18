@@ -25,6 +25,10 @@ public class GetAPage extends TestBase {
 			page=GetAPage.CartPage(PageType);
 			break;
 			
+		case ProductDescriptionPage:
+		page = GetAPage.ProductDescriptionPage(PageType);
+		
+			
 			
 		
 		}
@@ -33,6 +37,14 @@ public class GetAPage extends TestBase {
 	}
 		
 		
+
+	private static ProductDescriptionPage ProductDescriptionPage(PageType pageType) {
+	String url = pageType.getURL();
+		driver.get(url);
+		return new ProductDescriptionPage();
+	}
+
+
 
 	private static CartPage CartPage(PageType pageType) {
 		String url=pageType.getURL();

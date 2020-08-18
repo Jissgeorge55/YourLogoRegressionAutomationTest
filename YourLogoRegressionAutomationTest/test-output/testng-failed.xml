@@ -7,15 +7,15 @@
   <test thread-count="2" name="Test in Chrome(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.yourlogo.testcases.SearchPageTest">
+      <class name="com.yourlogo.testcases.ProductDescriptionPageTest">
         <methods>
-          <include name="getResult"/>
-          <include name="AddToWishlist"/>
-          <include name="teardown"/>
           <include name="setup"/>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="VerifyAddtoCartTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.yourlogo.testcases.SearchPageTest -->
+      </class> <!-- com.yourlogo.testcases.ProductDescriptionPageTest -->
     </classes>
   </test> <!-- Test in Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

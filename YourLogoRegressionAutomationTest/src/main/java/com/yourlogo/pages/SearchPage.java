@@ -196,9 +196,7 @@ public class SearchPage extends TestBase {
 
 	public boolean moreButton()
 	{
-		je.executeScript("arguments[0].scrollIntoView();", product1);
-		Actions act = new Actions(driver);
-		act.moveToElement(product1).build().perform();
+		elements.scrollAndHoverToElement(product1, driver);
 		
 		more.click();
 		
@@ -218,9 +216,7 @@ public class SearchPage extends TestBase {
 	
 	public boolean quickView() throws InterruptedException
 	{
-		je.executeScript("arguments[0].scrollIntoView();", product1);
-		Actions act = new Actions(driver);
-		act.moveToElement(product1).build().perform();
+		elements.scrollAndHoverToElement(product1, driver);
 		
 		quickView.click();
 		
@@ -261,7 +257,7 @@ public class SearchPage extends TestBase {
 	}
 
 	public String addtocart() throws InterruptedException {
-		scrollToProduct(product1);
+		elements.scrollAndHoverToElement(product1, driver);
 
 		addtocart.click();
 		Thread.sleep(2000);

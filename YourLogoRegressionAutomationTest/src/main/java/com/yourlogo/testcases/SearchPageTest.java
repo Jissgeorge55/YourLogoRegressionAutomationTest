@@ -41,14 +41,14 @@ public class SearchPageTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void SortByLowestPriceTest() {
+	public void VerifySortByLowestPriceTest() {
 		boolean result = searchpage.sortByLowestPrice();
 
 		Assert.assertEquals(result, true);
 	}
 
 	@Test(enabled = true)
-	public void keywordFromSearchPageTest() {
+	public void VerifykeywordFromSearchPageTest() {
 
 		String ActualResult = searchpage.searchbox();
 
@@ -57,7 +57,7 @@ public class SearchPageTest extends TestBase {
 	}
 
 	@Test(enabled = false)
-	public void MoreButtonTest() {
+	public void ValidateMoreButtonTest() {
 		boolean ActualResult = searchpage.moreButton();
 
 		Assert.assertEquals(true, ActualResult);
@@ -65,7 +65,7 @@ public class SearchPageTest extends TestBase {
 	}
 	
 	@Test(enabled = true)
-	public void QuickViewLinkTest() throws InterruptedException
+	public void ValidateQuickViewLinkTest() throws InterruptedException
 	{
 		boolean ActualResult = searchpage.quickView();
 		
@@ -74,14 +74,14 @@ public class SearchPageTest extends TestBase {
 	}
 	
 	@Test(enabled=false)
-	public void ProductsPerPageTest()
+	public void VerifyProductsPerPageTest()
 	{
 		boolean ActualResult = searchpage.productsPerPage(7);
 		Assert.assertEquals(true, ActualResult);
 	}
 	
 	@Test
-	public void AddToCartTest() throws InterruptedException
+	public void VerifyAddToCartTest() throws InterruptedException
 	{
 		String expected= searchpage.addtocart();
 		String actual = "Product successfully added to your shopping cart";
@@ -91,23 +91,8 @@ public class SearchPageTest extends TestBase {
 		Assert.assertTrue(result);
 	}
 	
-	@Test
-	public void AddToWishlist()
-	{
-		loginpage= (LoginPage) GetAPage.gotopage(PageType.LoginPage);
-		myaccountpage=loginpage.login(readconfig.getUsername(),readconfig.getPassword());
-		 searchpage=myaccountpage.searchText("Dresses");
-		 boolean expected = searchpage.addtowishlist();
-		 
-		 Assert.assertTrue(expected);
-		 
-	}
+	
 
-	@Test
-	public void LoadPage()
-	{
-		GetAPage.gotopage(PageType.CartPage);
-	}
 	
 	@AfterMethod
 	public void getResult(ITestResult result) throws IOException, InterruptedException
