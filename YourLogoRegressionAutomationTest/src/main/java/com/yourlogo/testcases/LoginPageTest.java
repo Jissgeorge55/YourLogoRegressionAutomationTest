@@ -148,7 +148,7 @@ public void VerifySearchBox()
 public void VerifyForgetPasswordtest()
 {
 	String expectedtext=loginpage.forgetPassword(readconfig.getUsername());
-	String actualtext= "New Password has been send";
+	String actualtext= "A confirmation email has been sent to your address: "+readconfig.getUsername() ;
 	
 	Assert.assertEquals(actualtext,expectedtext );
 }
@@ -190,6 +190,16 @@ public void getResult(ITestResult result) throws IOException
 	{
 		captureScreen(driver, result.getName());
 		System.out.println(result.getMethod().getMethodName()+" Failed");
+		
+	}
+	
+	try {
+		
+		loginpage.Signout();
+		
+	}
+	catch(Exception e)
+	{
 		
 	}
 	

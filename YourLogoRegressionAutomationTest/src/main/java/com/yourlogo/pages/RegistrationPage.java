@@ -55,15 +55,15 @@ public class RegistrationPage extends TestBase {
 		PageFactory.initElements(driver, this);   //initialize element
 	}
 	
-	public void Registeration(String fstname, String lstname, String emil1, String pswd, String addfstnme, String addlstnme, String addrs, String cty, String title, String pstcd, String phn)
+	public void Registeration(String title, String firstname, String lastname, String password,String DOB, String address, String city, String state, String zipcode,String country, String phone)
 	{
-		Mr.click();
-		FirstName.sendKeys(fstname);
-		LastName.sendKeys(lstname);
+		/*Mr.click();
+		FirstName.sendKeys(firstname);
+		LastName.sendKeys(lastname);
 		Email.clear();
 		Email.sendKeys(emil1);
 		
-		Password.sendKeys(pswd);
+		Password.sendKeys(password);
 		
 		Addname1.clear();
 		Addname1.sendKeys(addfstnme);
@@ -80,10 +80,10 @@ public class RegistrationPage extends TestBase {
 		Select state = new Select(State);
 		state.selectByVisibleText(title);
 		
-		Postcode.clear();
-		Postcode.sendKeys(pstcd);
-		Phone.clear();
-		Phone.sendKeys(phn);
+		Postcode.clear();*/
+//		Postcode.sendKeys(pstcd);
+//		Phone.clear();
+//		Phone.sendKeys(phn);
 		
 		
 				

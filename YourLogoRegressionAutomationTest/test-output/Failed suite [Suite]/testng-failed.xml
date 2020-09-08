@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]" parallel="tests">
+  <listeners>
+    <listener class-name="selenium.framework.utilities.ExtendReportNG"/>
+  </listeners>
+  <test thread-count="2" name="Test in Chrome(failed)(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.yourlogo.testcases.SearchPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="VerifySortByLowestPriceTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.yourlogo.testcases.SearchPageTest -->
+    </classes>
+  </test> <!-- Test in Chrome(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

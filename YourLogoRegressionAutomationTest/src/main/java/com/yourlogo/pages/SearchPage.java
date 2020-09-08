@@ -220,7 +220,7 @@ public class SearchPage extends TestBase {
 		
 		quickView.click();
 		
-		WebElement closeButton=driver.findElement(By.xpath("//a[@class=\"fancybox-item fancybox-close\"]"));
+		WebElement closeButton=driver.findElement(By.xpath("//a[@class=\"fancybox-item fancybox-closea\"]"));
         boolean result= closeButton.isDisplayed();
         closeButton.click();
         Thread.sleep(1000);

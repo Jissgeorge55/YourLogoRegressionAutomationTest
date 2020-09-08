@@ -8,6 +8,9 @@ import java.util.Date;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -25,7 +28,7 @@ public class ExtendReportNG extends TestListenerAdapter {
 	public ExtentReports extent;
 	public ExtentTest logger;
 	
-		
+	@BeforeSuite	
 	public void onStart(ITestContext testContext)
 	{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
@@ -49,18 +52,26 @@ public class ExtendReportNG extends TestListenerAdapter {
 		htmlReporter.config().setReportName("Test Automation Report"); // name of the report
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
 		htmlReporter.config().setTheme(Theme.STANDARD);
+		
+		
 	}
 	
 	public void onTestSuccess(ITestResult tr)
 	{
-		logger=extent.createTest(tr.getName()); // create new entry in th report
-		logger.log(Status.PASS,MarkupHelper.createLabel(tr.getName(),ExtentColor.GREEN)); // send the passed information to the report with GREEN color highlighted
+		logger=extent.createTest(tr.getName());// create new entry in th report
+		String details = tr.getMethod().getQualifiedName();
+		String Description[] = details.split("[.]");
+		String TestDescription = "Test Case " +Description[4]+ " in "+Description[3]+" is Passed";
+		logger.log(Status.PASS,MarkupHelper.createLabel(TestDescription, ExtentColor.GREEN)); // send the passed information to the report with GREEN color highlighted.  tr.getName()
 	}
 	
 	public void onTestFailure(ITestResult tr)
 	{
 		logger=extent.createTest(tr.getName()); // create new entry in the report
-		logger.log(Status.FAIL,MarkupHelper.createLabel(tr.getName(),ExtentColor.RED)); // send the passed information to the report with GREEN color highlighted
+		String details = tr.getMethod().getQualifiedName();
+		String Description[] = details.split("[.]");
+		String TestDescription = "Test Case " +Description[4]+ " in "+Description[3]+" is Failed. Please more details below.";
+		logger.log(Status.FAIL,MarkupHelper.createLabel(TestDescription,ExtentColor.RED)); // send the passed information to the report with GREEN color highlighted
 		logger.log(Status.FAIL, tr.getThrowable());
 		String screenshotPath=System.getProperty("user.dir")+"\\Screenshots\\"+tr.getName()+".png";
 		//File f = new File(screenshotPath); 
@@ -79,6 +90,7 @@ public class ExtendReportNG extends TestListenerAdapter {
 		
 	}
 	
+	
 	public void onTestSkipped(ITestResult tr)
 	{
 		logger=extent.createTest(tr.getName()); // create new entry in th report
@@ -86,7 +98,7 @@ public class ExtendReportNG extends TestListenerAdapter {
 		logger.log(Status.SKIP, tr.getThrowable());
 		
 	}
-	
+	@AfterSuite
 	public void onFinish(ITestContext testContext)
 	{
 		extent.flush();

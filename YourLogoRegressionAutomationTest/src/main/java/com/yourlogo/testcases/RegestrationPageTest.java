@@ -1,6 +1,7 @@
 package com.yourlogo.testcases;
 
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -13,6 +14,7 @@ import com.yourlogo.pages.HomePage;
 import com.yourlogo.pages.LoginPage;
 import com.yourlogo.pages.RegistrationPage;
 import selenium.framework.testbase.TestBase;
+import selenium.framework.utilities.ReadExcel;
 //import selenium.framework.utilities.TestUtil;
 
 public class RegestrationPageTest extends TestBase {
@@ -44,20 +46,34 @@ public class RegestrationPageTest extends TestBase {
     
 	}
 	
-	@DataProvider
-	/*public Iterator<Object[]> getData()
+	@DataProvider(name ="Testdata")
+	public String[][] getData() throws IOException
 	{
-		ArrayList<Object[]> testdata= TestUtil.getDataFromExcel();
-		return testdata.iterator();
+		String xlfile = (System.getProperty("user.dir"))+"/src/test/java/selenium/framework/testdata/TestData3.xlsx";
+		int rownum = ReadExcel.getRowCount(xlfile, "Sheet1");
+		int columnnum = ReadExcel.getCellCount(xlfile, "Sheet1", rownum);
+		String[][] testdata= new String[rownum][columnnum];
+		
+		for(int i=1;i<=rownum;i++)
+		{
+			for(int j=0;j<columnnum;j++)
+			{
+				testdata[i-1][j] = ReadExcel.getCellData(xlfile,"Sheet1",i, j );
+			}
+		}
+		
+		return testdata;
+				
+				
 	}
 	
 
-	@Test(dataProvider="getData")
-	public void verifyReadDatafromExcel(String firstname, String lastname, String email, String password, String addname1, String addname2, String address, String city, String state, String postcode, String phone)
+	@Test(dataProvider ="Testdata")
+	public void verifyReadDatafromExcel(String title, String firstname, String lastname, String password,String DOB, String address, String city, String state, String zipcode,String country, String phone)
 	{
-		RegPage.Registeration(firstname, lastname, email, password, addname1, addname2, address, city, state, postcode, phone);
-		
-	}*/
+		//RegPage.Registeration(firstname, lastname,  password,   address, city, state, zipcode, country, phone);
+		System.out.println(firstname);
+	}
 
 	@AfterMethod
 	public void teardown()

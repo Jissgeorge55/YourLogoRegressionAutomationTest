@@ -13,7 +13,11 @@ public enum PageType {
 	("http://automationpractice.com/index.php?controller=order"),
 	
    ProductDescriptionPage
-   ("http://automationpractice.com/index.php?id_product=3&controller=product");
+   ("http://automationpractice.com/index.php?id_product=3&controller=product"),
+   
+   HomePage
+   ("http://automationpractice.com/");
+	
 	
 	private String url;
 	

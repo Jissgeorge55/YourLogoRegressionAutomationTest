@@ -10,6 +10,10 @@ public class GetAPage extends TestBase {
 	{
 		switch(PageType) {
 		
+		case HomePage:
+			
+			page=GetAPage.HomePage(PageType);
+		
 		case LoginPage:
 		
 			page = GetAPage.LoginPage(PageType);
@@ -37,6 +41,14 @@ public class GetAPage extends TestBase {
 	}
 		
 		
+
+	private static HomePage HomePage(PageType pageType) {
+		String url = pageType.getURL();
+		driver.get(url);
+		return new HomePage();
+	}
+
+
 
 	private static ProductDescriptionPage ProductDescriptionPage(PageType pageType) {
 	String url = pageType.getURL();

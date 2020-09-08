@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MASTER SUITE">  
+    <listeners>
+ 		<listener class-name="selenium.framework.utilities.ExtendReportNG"/>  		
+ 	</listeners>
+  	
+	<suite-files> 	
+		<suite-file path="Login.xml"/>
+		<suite-file path="SearchPage.xml"/>
+		<suite-file path="QuickViewPage.xml"/>
+		<suite-file path="ProductDescriptionPage.xml"/>
+  </suite-files>
+  </suite> 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests">
+
+  <test name="Test in Chrome">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.yourlogo.testcases.LoginPageTest">
+      <methods>   
+      
+    <include name="ValidateLoginTest" />
+   <include name="VerifyLoginPagetitletest" /> 
+   <include name="VerifySignOutTest" />
+   <include name="InvalidCredentialsTest" />
+   <include name="VerifyForgetPasswordtest" />
+   <include name="VerifyTopNavigationOnLogin" />
+   <include name="VerifySearchBox" />
+
+    </methods>
+    </class>
+    </classes>
+    
+  </test> 
+  </suite> 

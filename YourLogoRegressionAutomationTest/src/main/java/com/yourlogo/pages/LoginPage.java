@@ -59,7 +59,7 @@ public class LoginPage extends TestBase {
 	@FindBy (xpath="//span[text()='Retrieve Password']")
 	WebElement retrivePasswordButton;
 	
-	@FindBy(xpath="//p[text()='New Password Send']")
+	@FindBy(xpath="//p[@class='alert alert-success']")
 	WebElement newPasswordText;
 	
 	
@@ -105,7 +105,7 @@ public class LoginPage extends TestBase {
 		password.sendKeys(pwd);
 		signinbutton.click();
 		
-		String text=driver.findElement(By.xpath("//div[@id='center_column']//div[@class='alert alert-danger']")).getText();
+		String text=driver.findElement(By.xpath("//div[@id='center_column']//div[@class='alert alert-danger']//li")).getText();
 		return text;
 		
 	}
@@ -163,6 +163,11 @@ public class LoginPage extends TestBase {
 		String title = driver.getTitle();
 		
 		return title;
+		
+	}
+
+	public void Signout() {
+		logout.click();
 		
 	}
 	

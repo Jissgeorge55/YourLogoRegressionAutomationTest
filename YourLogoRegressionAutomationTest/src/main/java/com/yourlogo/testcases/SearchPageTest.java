@@ -64,7 +64,7 @@ public class SearchPageTest extends TestBase {
 
 	}
 	
-	@Test(enabled = true)
+	@Test(enabled = true, priority = 0)
 	public void ValidateQuickViewLinkTest() throws InterruptedException
 	{
 		boolean ActualResult = searchpage.quickView();
@@ -102,6 +102,7 @@ public class SearchPageTest extends TestBase {
 			Thread.sleep(1000);
 			captureScreen(driver, result.getName());
 			System.out.println(result.getMethod().getMethodName()+" Failed");
+			GetAPage.gotopage(PageType.HomePage);
 			
 		}
 		

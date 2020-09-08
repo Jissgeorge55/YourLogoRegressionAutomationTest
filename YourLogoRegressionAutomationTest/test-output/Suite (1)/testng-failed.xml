@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite (1)]" parallel="tests">
+  <listeners>
+    <listener class-name="selenium.framework.utilities.ExtendReportNG"/>
+  </listeners>
+  <test thread-count="2" name="Test in Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.yourlogo.testcases.QuickViewTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyProductAddtoCartTest"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.yourlogo.testcases.QuickViewTest -->
+    </classes>
+  </test> <!-- Test in Chrome(failed) -->
+</suite> <!-- Failed suite [Suite (1)] -->
