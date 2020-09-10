@@ -30,7 +30,7 @@ public class ProductDescriptionPage extends TestBase{
 		addtocartbutton.click();
 		String messagexpath = "//h2[contains(.,'Product successfully added to your shopping cart')]";
 		WebElement messagetext=elements.findByXpath(messagexpath, driver);
-		elements.explictWait(messagetext, 3, driver);
+		elements.explictWait(messagetext, 3);
 		String text = messagetext.getText();
 		
 		System.out.println(text);

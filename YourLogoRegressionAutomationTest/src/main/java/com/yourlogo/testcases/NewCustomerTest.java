@@ -37,6 +37,6 @@ public class NewCustomerTest extends TestBase {
 	public void VerifyRegistrationMandatoryFieldsTest()
 	{
 		
-		RegPage.Registeration("Ricky","Ponding","testjs2@gmail.com" , "test@123", "Rickyy", "Pondingg", "123 street, Ausis","Suncity", "Florida","4355244","6677366");
+		//RegPage.Registeration("Ricky","Ponding","testjs2@gmail.com" , "test@123", "Rickyy", "Pondingg", "123 street, Ausis","Suncity", "Florida","4355244","6677366");
 	}
 }

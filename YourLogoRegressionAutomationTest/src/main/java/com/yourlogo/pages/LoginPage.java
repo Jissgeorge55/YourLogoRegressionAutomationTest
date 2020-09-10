@@ -138,7 +138,7 @@ public class LoginPage extends TestBase {
 		
 	
 	public RegistrationPage Createaccnt(String emil) {
-		emailfield.sendKeys(emil);
+		elements.clearAndSendKeys(emailfield, emil);
 		createbutton.click();
 		return new RegistrationPage();
 		

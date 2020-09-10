@@ -15,38 +15,58 @@ public class RegistrationPage extends TestBase {
 	@FindBy(xpath="//input[@type='radio' and @value='2']")
 	WebElement Mrs;
 	
-	@FindBy(xpath="//input[@id='customer_firstname']")
+	@FindBy(id="customer_firstname")
 	WebElement FirstName;
 	
-	@FindBy(xpath="//input[@id='customer_lastname']")
+	@FindBy(id="customer_lastname")
 	WebElement LastName;
 	
-	@FindBy(xpath="//input[@id='email']")
+	@FindBy(id="email")
 	WebElement Email;
 	
-	@FindBy(xpath="//input[@id='passwd']")
+	@FindBy(id="passwd")
 	WebElement Password;
 	
-	@FindBy(xpath="//input[@type='text' and @name='firstname']")
-	WebElement Addname1;
+	@FindBy(id="days")
+	WebElement Day;
 	
-	@FindBy(xpath="//input[@id='lastname']")
-	WebElement AddName2;
+	@FindBy(id="months")
+	WebElement Month;
 	
-	@FindBy(xpath="//input[@id='address1']")
+	@FindBy(id="years")
+	WebElement Year;
+	
+	
+	@FindBy(id="firstname")
+	WebElement FirstName1;
+	
+	@FindBy(id="lastname")
+	WebElement LastName2;
+	
+	@FindBy(id="company")
+	WebElement Company;
+	
+
+	
+	
+	@FindBy(id="address1")
 	WebElement Address;
 	
-	@FindBy(xpath="//input[@id='city']")
+	@FindBy(id="city")
 	WebElement City;
 	
-	@FindBy(xpath="//input[@id='postcode']")
+	@FindBy(id="postcode")
 	WebElement Postcode;
 	
-	@FindBy(xpath="//select[@id='id_state']")
+	@FindBy(id="id_state")
 	WebElement State;
 	
-	@FindBy(xpath="//input[@id='phone_mobile']")
+	@FindBy(id="phone_mobile")
 	WebElement Phone;
+	
+	@FindBy(id="submitAccount")
+	WebElement RegisterButton;
+	
 	
 	
 	
@@ -55,38 +75,47 @@ public class RegistrationPage extends TestBase {
 		PageFactory.initElements(driver, this);   //initialize element
 	}
 	
-	public void Registeration(String title, String firstname, String lastname, String password,String DOB, String address, String city, String state, String zipcode,String country, String phone)
+	public void EnterDetails(String title, String firstname, String lastname, String password,String DOB, String address, String city, String state, String zipcode,String country, String phone)
 	{
-		/*Mr.click();
-		FirstName.sendKeys(firstname);
-		LastName.sendKeys(lastname);
-		Email.clear();
-		Email.sendKeys(emil1);
 		
-		Password.sendKeys(password);
+		if(title.equals("Mr"))
+		{
+			Mr.click();
+		}
 		
-		Addname1.clear();
-		Addname1.sendKeys(addfstnme);
+		else if(title.equals("Mrs"))
+		{
+			Mrs.click();
+		}
 		
-		AddName2.clear();
-		AddName2.sendKeys(addlstnme);
+
+		elements.clearAndSendKeys(FirstName, firstname);
+		elements.clearAndSendKeys(LastName, lastname);
+		elements.clearAndSendKeys(Password, password);
+		elements.clearAndSendKeys(FirstName1, firstname);
+		elements.clearAndSendKeys(LastName2, lastname);
+		elements.clearAndSendKeys(Address, address);
+		elements.clearAndSendKeys(City, city);
+		elements.clearAndSendKeys(Postcode, zipcode);
 		
-		Address.clear();
-		Address.sendKeys(addrs);
+		elements.select("TEXT", State, 1, state, "");
 		
-		City.clear();
-		City.sendKeys(cty);
+		elements.clearAndSendKeys(Phone, phone);
+	
 		
-		Select state = new Select(State);
-		state.selectByVisibleText(title);
+	}
+	
+	
+	public MyAccountPage clickRegesterButton()
+	{
+		RegisterButton.click();
 		
-		Postcode.clear();*/
-//		Postcode.sendKeys(pstcd);
-//		Phone.clear();
-//		Phone.sendKeys(phn);
+		return new MyAccountPage();
+	}
+	
+	
+
 		
-		
-				
 		
 	}
 	
@@ -102,4 +131,3 @@ public class RegistrationPage extends TestBase {
 	
 	
 
-}
