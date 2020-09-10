@@ -23,7 +23,7 @@ public class CartPageTest extends TestBase {
 		super(); // to call the constructor of the super class ie Base
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void precondition() throws InterruptedException {
 		
 
@@ -46,7 +46,7 @@ public class CartPageTest extends TestBase {
 
 	}
 
-	@Test(enabled = true)
+	@Test(groups={"Smoke"})
 	public void VerifyContinueShopping() {
 
 		searchpage = cartpage.ContinueShopping();
@@ -64,7 +64,7 @@ public class CartPageTest extends TestBase {
 		Assert.assertEquals(true, EmptyShoppingCart);
 	}
 
-	@AfterMethod(enabled = true)
+	@AfterMethod(alwaysRun=true)
 	public void getResult(ITestResult result) throws IOException
 	{
 		if(result.getStatus()==ITestResult.FAILURE)

@@ -2,12 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="66939" started-at="2020-09-10T10:41:48Z" finished-at="2020-09-10T10:42:55Z">
+  <suite name="Failed suite [Suite]" duration-ms="51290" started-at="2020-09-10T13:37:40Z" finished-at="2020-09-10T13:38:31Z">
     <groups>
+      <group name="Smoke">
+        <method signature="QuickViewTest.VerifyProductAddtoCartTest()[pri:0, instance:com.yourlogo.testcases.QuickViewTest@13805618]" name="VerifyProductAddtoCartTest" class="com.yourlogo.testcases.QuickViewTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test name="Test in Chrome" duration-ms="66939" started-at="2020-09-10T10:41:48Z" finished-at="2020-09-10T10:42:55Z">
-      <class name="com.yourlogo.testcases.RegestrationPageTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.yourlogo.testcases.RegestrationPageTest@102b3b1]" name="setup" is-config="true" duration-ms="38378" started-at="2020-09-10T10:41:48Z" finished-at="2020-09-10T10:42:27Z">
+    <test name="Test in Chrome(failed)" duration-ms="51290" started-at="2020-09-10T13:37:40Z" finished-at="2020-09-10T13:38:31Z">
+      <class name="com.yourlogo.testcases.QuickViewTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.yourlogo.testcases.QuickViewTest@13805618]" name="setup" is-config="true" duration-ms="28506" started-at="2020-09-10T13:37:40Z" finished-at="2020-09-10T13:38:09Z">
           <params>
             <param index="0">
               <value>
@@ -18,92 +21,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.RegestrationPageTest@102b3b1]" name="setup" is-config="true" duration-ms="4540" started-at="2020-09-10T10:42:32Z" finished-at="2020-09-10T10:42:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.QuickViewTest@13805618]" name="setup" is-config="true" duration-ms="5616" started-at="2020-09-10T13:38:09Z" finished-at="2020-09-10T13:38:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyReadDatafromExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.yourlogo.testcases.RegestrationPageTest@102b3b1]" name="verifyReadDatafromExcel" duration-ms="16327" started-at="2020-09-10T10:42:37Z" data-provider="Testdata" finished-at="2020-09-10T10:42:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mr]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Kennady]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[rojantest3@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test123]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[12/1/00]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[test road, kanavn]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Kanvan]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Florida]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[United States]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[9876543210]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="VerifyProductAddtoCartTest()[pri:0, instance:com.yourlogo.testcases.QuickViewTest@13805618]" name="VerifyProductAddtoCartTest" duration-ms="14498" started-at="2020-09-10T13:38:15Z" finished-at="2020-09-10T13:38:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyReadDatafromExcel -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.RegestrationPageTest@102b3b1]" name="getResult" is-config="true" duration-ms="0" started-at="2020-09-10T10:42:53Z" finished-at="2020-09-10T10:42:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyReadDatafromExcel status=SUCCESS method=RegestrationPageTest.verifyReadDatafromExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.yourlogo.testcases.RegestrationPageTest@102b3b1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.RegestrationPageTest@102b3b1]" name="teardown" is-config="true" duration-ms="1976" started-at="2020-09-10T10:42:53Z" finished-at="2020-09-10T10:42:55Z">
+        </test-method> <!-- VerifyProductAddtoCartTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.QuickViewTest@13805618]" name="teardown" is-config="true" duration-ms="1829" started-at="2020-09-10T13:38:29Z" finished-at="2020-09-10T13:38:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.yourlogo.testcases.RegestrationPageTest -->
-    </test> <!-- Test in Chrome -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.yourlogo.testcases.QuickViewTest -->
+    </test> <!-- Test in Chrome(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
 </testng-results>

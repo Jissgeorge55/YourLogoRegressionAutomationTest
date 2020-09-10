@@ -31,7 +31,7 @@ public class LoginPageTest extends TestBase
 		super();           //to call the constructor of the super class ie Base
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void setup()
 	{
 
@@ -57,7 +57,7 @@ public void VerifyLoginPagetitletest()
 
 
 //This test case is to verify whether user can login with valid credentials.
-@Test (enabled = true)
+@Test (groups={"Smoke"})
 public void ValidateLoginTest()
 	{
 		myaccountpage=loginpage.login(readconfig.getUsername(),readconfig.getPassword());
@@ -70,7 +70,7 @@ public void ValidateLoginTest()
 
 
 //This test case is to verify whether user can successfully Logout.
-@Test(enabled = true)
+@Test(groups={"Smoke"})
 public void VerifySignOutTest()
 	{
 		boolean SignInButtonDisplay=loginpage.logout(readconfig.getUsername(),readconfig.getPassword());
@@ -144,7 +144,7 @@ public void VerifySearchBox()
 	
 }
 
-@Test
+@Test(groups={"Smoke"})
 public void VerifyForgetPasswordtest()
 {
 	String expectedtext=loginpage.forgetPassword(readconfig.getUsername());
@@ -183,7 +183,7 @@ private Object Object(String gettopnav1, String gettopnav2, String gettopnav3) {
 	return null;
 }
 
-@AfterMethod 
+@AfterMethod (alwaysRun=true)
 public void getResult(ITestResult result) throws IOException
 {
 	if(result.getStatus()==ITestResult.FAILURE)

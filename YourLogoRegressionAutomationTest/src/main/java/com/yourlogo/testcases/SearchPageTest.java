@@ -30,7 +30,7 @@ public class SearchPageTest extends TestBase {
 
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void setup() {
 	
 
@@ -47,7 +47,7 @@ public class SearchPageTest extends TestBase {
 		Assert.assertEquals(result, true);
 	}
 
-	@Test(enabled = true)
+	@Test(groups={"Smoke"})
 	public void VerifykeywordFromSearchPageTest() {
 
 		String ActualResult = searchpage.searchbox();
@@ -80,7 +80,7 @@ public class SearchPageTest extends TestBase {
 		Assert.assertEquals(true, ActualResult);
 	}
 	
-	@Test
+	@Test(groups={"Smoke"})
 	public void VerifyAddToCartTest() throws InterruptedException
 	{
 		String expected= searchpage.addtocart();
@@ -89,12 +89,13 @@ public class SearchPageTest extends TestBase {
 		//.out.println(expected+" msg");
 	boolean result = expected.contains(actual);
 		Assert.assertTrue(result);
+		GetAPage.gotopage(PageType.HomePage);
 	}
 	
 	
 
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void getResult(ITestResult result) throws IOException, InterruptedException
 	{
 		if(result.getStatus()==ITestResult.FAILURE)
