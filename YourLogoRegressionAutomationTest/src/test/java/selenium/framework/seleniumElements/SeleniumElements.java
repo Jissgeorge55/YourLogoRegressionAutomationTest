@@ -67,8 +67,7 @@ public class SeleniumElements  {
 		WebElement seleniumElement = (WebElement) element;
 		try {
 			try {
-			WebDriverWait wait = new WebDriverWait(driver, 5);
-			wait.until(ExpectedConditions.elementToBeClickable(seleniumElement));
+			explictWait(seleniumElement,3);
 			}catch (TimeoutException e)
 			{
 				
