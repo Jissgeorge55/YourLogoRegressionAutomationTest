@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests">
+<listeners>
+<listener class-name="selenium.framework.utilities.ExtendReportNG" />
+</listeners>
+  <test name="Test in Chrome">
+  <parameter name="browser" value="chrome"/>
+
+    
+    <!-- LOGIN PAGE TEST CASES -->
+    <classes>
+      <class name="com.yourlogo.testcases.LoginPageTest">
+      <methods>   
+    <include name="VerifyLoginPagetitletest" />
+    <include name="ValidateLoginTest" />
+    <include name="VerifySignOutTest" />
+    <include name="InvalidCredentialsTest" />
+    <include name="validateInvalidCreateEmail" />
+    <include name="VerifyCartLinkTest" />
+    <include name="VerifySearchBox" />
+    <include name="VerifyForgetPasswordtest" />
+    <include name="VerifyTopNavigationOnLogin" />
+    </methods>
+    </class>
+    
+    
+    <!-- CART PAGE TEST CASES -->
+      <class name="com.yourlogo.testcases.CartPageTest">
+      <methods>   
+    <include name="VerifyCartPagetitleTest" />
+    <include name="VerifyContinueShopping" />
+    <include name="DeleteProductTest" />
+  
+    </methods>
+    </class>
+    
+    <!-- SEARCH PAGE TEST CASES -->
+      <class name="com.yourlogo.testcases.SearchPageTest">
+      <methods>   
+    <include name="VerifySortByLowestPriceTest" />
+    <include name="VerifykeywordFromSearchPageTest" />
+    <include name="ValidateMoreButtonTest" />
+    <include name="ValidateQuickViewLinkTest" />
+    <include name="VerifyProductsPerPageTest" />
+    <include name="VerifyAddToCartTest" />
+    </methods>
+    </class>
+    
+    <!-- PRODUCT DESCRIPTION PAGE TEST CASES -->
+    <class name="com.yourlogo.testcases.ProductDescriptionPageTest">
+      <methods>   
+    <include name="VerifyAddtoCartTest" />
+    <include name="VerifyAddToWishlistTest" />
+    </methods>
+    </class>
+    
+    <!-- QUICK VIEW PAGE TEST CASES -->
+    <class name="com.yourlogo.testcases.QuickViewTest">
+      <methods>   
+    <include name="VerifyProductAddtoCartTest" />
+    </methods>
+    </class>
+    
+    </classes>
+    
+  </test>  
+  
+ 
+
+</suite> 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="4" total="6" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="110787" started-at="2020-09-08T15:46:50Z" finished-at="2020-09-08T15:48:41Z">
+  <suite name="Suite" duration-ms="66939" started-at="2020-09-10T10:41:48Z" finished-at="2020-09-10T10:42:55Z">
     <groups>
     </groups>
-    <test name="Test in Chrome" duration-ms="110787" started-at="2020-09-08T15:46:50Z" finished-at="2020-09-08T15:48:41Z">
-      <class name="com.yourlogo.testcases.SearchPageTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.yourlogo.testcases.SearchPageTest@3f49dace]" name="setup" is-config="true" duration-ms="40878" started-at="2020-09-08T15:46:51Z" finished-at="2020-09-08T15:47:32Z">
+    <test name="Test in Chrome" duration-ms="66939" started-at="2020-09-10T10:41:48Z" finished-at="2020-09-10T10:42:55Z">
+      <class name="com.yourlogo.testcases.RegestrationPageTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.yourlogo.testcases.RegestrationPageTest@102b3b1]" name="setup" is-config="true" duration-ms="38378" started-at="2020-09-10T10:41:48Z" finished-at="2020-09-10T10:42:27Z">
           <params>
             <param index="0">
               <value>
@@ -18,110 +18,92 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@3f49dace]" name="setup" is-config="true" duration-ms="4845" started-at="2020-09-08T15:47:32Z" finished-at="2020-09-08T15:47:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.RegestrationPageTest@102b3b1]" name="setup" is-config="true" duration-ms="4540" started-at="2020-09-10T10:42:32Z" finished-at="2020-09-10T10:42:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="ValidateQuickViewLinkTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@3f49dace]" name="ValidateQuickViewLinkTest" duration-ms="5744" started-at="2020-09-08T15:47:37Z" finished-at="2020-09-08T15:47:43Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class="fancybox-item fancybox-closea"]"}
-  (Session info: chrome=85.0.4183.83)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LENOVO-PC', ip: '192.168.225.190', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 6a9e25c3950e41849fcd22f59bd09465
-*** Element info: {Using=xpath, value=//a[@class="fancybox-item fancybox-closea"]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class="fancybox-item fancybox-closea"]"}
-  (Session info: chrome=85.0.4183.83)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LENOVO-PC', ip: '192.168.225.190', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58700}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 6a9e25c3950e41849fcd22f59bd09465
-*** Element info: {Using=xpath, value=//a[@class="fancybox-item fancybox-closea"]}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.yourlogo.pages.SearchPage.quickView(SearchPage.java:223)
-at com.yourlogo.testcases.SearchPageTest.ValidateQuickViewLinkTest(SearchPageTest.java:70)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateQuickViewLinkTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.SearchPageTest@3f49dace]" name="getResult" is-config="true" duration-ms="10999" started-at="2020-09-08T15:47:43Z" finished-at="2020-09-08T15:47:54Z">
+        <test-method status="PASS" signature="verifyReadDatafromExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.yourlogo.testcases.RegestrationPageTest@102b3b1]" name="verifyReadDatafromExcel" duration-ms="16327" started-at="2020-09-10T10:42:37Z" data-provider="Testdata" finished-at="2020-09-10T10:42:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidateQuickViewLinkTest status=FAILURE method=SearchPageTest.ValidateQuickViewLinkTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@3f49dace] output={null}]]]>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kennady]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[rojantest3@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[12/1/00]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[test road, kanavn]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Kanvan]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Florida]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReadDatafromExcel -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.RegestrationPageTest@102b3b1]" name="getResult" is-config="true" duration-ms="0" started-at="2020-09-10T10:42:53Z" finished-at="2020-09-10T10:42:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyReadDatafromExcel status=SUCCESS method=RegestrationPageTest.verifyReadDatafromExcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.yourlogo.testcases.RegestrationPageTest@102b3b1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@3f49dace]" name="setup" is-config="true" duration-ms="4434" started-at="2020-09-08T15:47:54Z" finished-at="2020-09-08T15:47:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyAddToCartTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@3f49dace]" name="VerifyAddToCartTest" duration-ms="3018" started-at="2020-09-08T15:47:58Z" finished-at="2020-09-08T15:48:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyAddToCartTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.SearchPageTest@3f49dace]" name="getResult" is-config="true" duration-ms="1" started-at="2020-09-08T15:48:01Z" finished-at="2020-09-08T15:48:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyAddToCartTest status=SUCCESS method=SearchPageTest.VerifyAddToCartTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@3f49dace] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@3f49dace]" name="teardown" is-config="true" duration-ms="39624" started-at="2020-09-08T15:48:01Z" finished-at="2020-09-08T15:48:41Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.RegestrationPageTest@102b3b1]" name="teardown" is-config="true" duration-ms="1976" started-at="2020-09-10T10:42:53Z" finished-at="2020-09-10T10:42:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.yourlogo.testcases.SearchPageTest -->
+      </class> <!-- com.yourlogo.testcases.RegestrationPageTest -->
     </test> <!-- Test in Chrome -->
   </suite> <!-- Suite -->
 </testng-results>

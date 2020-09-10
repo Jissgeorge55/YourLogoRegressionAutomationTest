@@ -31,7 +31,7 @@ public class TestBase {
 	public static WebDriver driver;
 	
 	static ReadConfigFile readconfig = new ReadConfigFile();
-	public SeleniumElements elements = new SeleniumElements();
+	public SeleniumElements elements = new SeleniumElements(driver);
 	
 	
 	@Parameters("browser")

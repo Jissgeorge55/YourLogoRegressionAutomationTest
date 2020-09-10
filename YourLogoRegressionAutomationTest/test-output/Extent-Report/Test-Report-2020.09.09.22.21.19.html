@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 7, 2020 07:25:07 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 9, 2020 10:21:19 PM</span>
 				</a>
 			</li>
 			<li>
@@ -77,8 +77,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -129,10 +128,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -144,10 +143,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='40%'><span class='strong'>2</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='60%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -162,85 +161,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>VerifyForgetPasswordtest</span>
-						<span class='test-time'>Sep 7, 2020 07:25:56 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Sep 7, 2020 07:25:56 PM</span>
-	<span class='label end-time'>Sep 7, 2020 07:25:56 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+14ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:25:56 PM</td>
-					<td class='step-details'><span class='label white-text green'>VerifyForgetPasswordtest</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>InvalidCredentialsTest</span>
-						<span class='test-time'>Sep 7, 2020 07:26:09 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Sep 7, 2020 07:26:09 PM</span>
-	<span class='label end-time'>Sep 7, 2020 07:26:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:26:09 PM</td>
-					<td class='step-details'><span class='label white-text green'>InvalidCredentialsTest</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>VerifySortByLowestPriceTest</span>
-						<span class='test-time'>Sep 7, 2020 07:26:45 PM</span>
+						<span class='test-name'>verifyReadDatafromExcel</span>
+						<span class='test-time'>Sep 9, 2020 10:22:22 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 7, 2020 07:26:45 PM</span>
-	<span class='label end-time'>Sep 7, 2020 07:26:45 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+13ms</span>
+	<span class='label start-time'>Sep 9, 2020 10:22:22 PM</span>
+	<span class='label end-time'>Sep 9, 2020 10:22:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+42ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -254,17 +185,20 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>7:26:45 PM</td>
-					<td class='step-details'><span class='label white-text red'>VerifySortByLowestPriceTest</span></td>
+					<td class='timestamp'>10:22:22 PM</td>
+					<td class='step-details'><span class='label white-text red'>Test Case verifyReadDatafromExcel in RegestrationPageTest is Failed. Please more details below.</span></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>7:26:45 PM</td>
-					<td class='step-details'><pre>java.lang.IndexOutOfBoundsException: Index: 8, Size: 7
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at com.yourlogo.pages.SearchPage.sortByLowestPrice(SearchPage.java:140)
-	at com.yourlogo.testcases.SearchPageTest.VerifySortByLowestPriceTest(SearchPageTest.java:45)
+					<td class='timestamp'>10:22:22 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [My account - My Store] but found [Login - My Store]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.yourlogo.testcases.RegestrationPageTest.verifyReadDatafromExcel(RegestrationPageTest.java:91)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -289,8 +223,8 @@
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>7:26:45 PM</td>
-					<td class='step-details'>Screenshot is below:<img data-featherlight='C:\Users\hp\GitYourLogoRegression\YourLogoRegressionAutomationTest\Screenshots\VerifySortByLowestPriceTest.png' width='10%' src='C:\Users\hp\GitYourLogoRegression\YourLogoRegressionAutomationTest\Screenshots\VerifySortByLowestPriceTest.png' data-src='C:\Users\hp\GitYourLogoRegression\YourLogoRegressionAutomationTest\Screenshots\VerifySortByLowestPriceTest.png'></td>
+					<td class='timestamp'>10:22:22 PM</td>
+					<td class='step-details'>Screenshot is below:<img data-featherlight='C:\Users\hp\GitYourLogoRegression\YourLogoRegressionAutomationTest\Screenshots\verifyReadDatafromExcel.png' width='10%' src='C:\Users\hp\GitYourLogoRegression\YourLogoRegressionAutomationTest\Screenshots\verifyReadDatafromExcel.png' data-src='C:\Users\hp\GitYourLogoRegression\YourLogoRegressionAutomationTest\Screenshots\verifyReadDatafromExcel.png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -350,7 +284,7 @@
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.IndexOutOfBoundsException</span>
+                                <span class='exception-name'>java.lang.AssertionError</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -365,13 +299,16 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Sep 7, 2020 07:26:45 PM</td>
-                                                        <td class='linked' test-id='3'>VerifySortByLowestPriceTest</td>
-                                                        <td><pre><pre>java.lang.IndexOutOfBoundsException: Index: 8, Size: 7
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at com.yourlogo.pages.SearchPage.sortByLowestPrice(SearchPage.java:140)
-	at com.yourlogo.testcases.SearchPageTest.VerifySortByLowestPriceTest(SearchPageTest.java:45)
+                                                        <td>Sep 9, 2020 10:22:22 PM</td>
+                                                        <td class='linked' test-id='1'>verifyReadDatafromExcel</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [My account - My Store] but found [Login - My Store]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.yourlogo.testcases.RegestrationPageTest.verifyReadDatafromExcel(RegestrationPageTest.java:91)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -418,31 +355,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 7, 2020 07:25:07 PM</div>
+					<div class='panel-lead'>Sep 9, 2020 10:21:19 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 7, 2020 07:26:48 PM</div>
+			 		<div class='panel-lead'>Sep 9, 2020 10:22:24 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>100,531ms</div>
+					<div class='panel-lead'>64,963ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -491,7 +428,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
+				passParent: 0,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
@@ -499,7 +436,7 @@
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 2,
+				passChild: 0,
 				failChild: 3,
 				fatalChild: 0,
 				errorChild: 0,

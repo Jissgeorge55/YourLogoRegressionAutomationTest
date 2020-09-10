@@ -3,6 +3,7 @@ package selenium.framework.seleniumElements;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -18,6 +19,13 @@ public class SeleniumElements  {
 	public static final int SHORT_SLEEP = 1000;
 	public static final int MEDIUM_SLEEP = 4000;
 	public static final int LONG_SLEEP = 7000;
+	
+	 WebDriver driver;
+	
+	public  SeleniumElements(WebDriver driver)
+	{
+		this.driver = driver;
+	}
 
 	public void refresh(Object driver) {
 		WebDriver seleniumDriver = (WebDriver) driver;
@@ -34,14 +42,37 @@ public class SeleniumElements  {
 
 	}
 
-	public void select(String elementProperty, Object element, int index, String textOrValue, String errorMess,
-			Object driver) {
-		WebDriver seleniumDriver = (WebDriver) driver;
+	public void clearAndSendKeys(Object element, String text)
+	{
+		
+		WebElement seleniumElement = (WebElement) element;
+		
+		try {
+			seleniumElement.clear();
+			seleniumElement.sendKeys(text);
+			
+		}catch(RuntimeException firstAttempt) {
+			
+				pause(MEDIUM_SLEEP);
+				seleniumElement.clear();
+				seleniumElement.sendKeys(text);
+			
+				
+		
+		}
+	}
+		
+	public void select(String elementProperty, Object element, int index, String textOrValue, String errorMess) {
+		
 		WebElement seleniumElement = (WebElement) element;
 		try {
-			
-			 WebDriverWait wait = new WebDriverWait(seleniumDriver, 40);
-			 wait.until(ExpectedConditions.visibilityOf(seleniumElement));
+			try {
+			WebDriverWait wait = new WebDriverWait(driver, 5);
+			wait.until(ExpectedConditions.elementToBeClickable(seleniumElement));
+			}catch (TimeoutException e)
+			{
+				
+			}
 			 
 
 			Select select = new Select(seleniumElement);
@@ -58,7 +89,7 @@ public class SeleniumElements  {
 			}
 
 		} catch (RuntimeException e) {
-			System.out.println("Invalid Selection");
+			System.out.println(e);
 		}
 
 	}
@@ -74,16 +105,16 @@ public class SeleniumElements  {
 
 	}
 
-	public void switchToFrame(String frame, Object driver) {
+	public void switchToFrame(String frame) {
 
-		WebDriver seleniumDriver = (WebDriver) driver;
+		
 		try {
-			WebDriverWait wait = new WebDriverWait(seleniumDriver, 40);
+			WebDriverWait wait = new WebDriverWait(driver, 40);
 			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frame));
 		} catch (RuntimeException firstAttempt) {
 
 			pause(MEDIUM_SLEEP);
-			seleniumDriver.switchTo().frame(frame);
+			driver.switchTo().frame(frame);
 		}
 	}
 
@@ -117,7 +148,7 @@ public class SeleniumElements  {
 		return alertMessage;
 	}
 
-	public void explictWait(WebElement element, int time, Object driver) {
+	public void explictWait(WebElement element, int time) {
 		WebDriverWait wait = new WebDriverWait((WebDriver) driver, time);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}

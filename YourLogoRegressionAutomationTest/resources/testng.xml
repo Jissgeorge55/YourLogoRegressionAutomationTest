@@ -10,37 +10,12 @@
     
 
     <classes>
-      <!-- <class name="com.yourlogo.testcases.LoginPageTest">
-      <methods>   
-    <include name="VerifyLoginPagetitletest" />
-    <include name="ValidateLoginTest" />
-    <include name="VerifySignOutTest" />
-    <include name="InvalidCredentialsTest" />
-    <include name="validateInvalidCreateEmail" />
-    <include name="VerifyCartLinkTest" />
-    <include name="VerifySearchBox" />
-    <include name="VerifyForgetPasswordtest" />
-    <include name="VerifyTopNavigationOnLogin" />
-    </methods>
-    </class>
+     
     
-      <class name="com.yourlogo.testcases.CartPageTest">
-      <methods>   
-    <include name="VerifyCartPagetitleTest" />
-    <include name="VerifyContinueShopping" />
-    <include name="DeleteProductTest" />
-  
-    </methods>
-    </class> -->
     
-      <class name="com.yourlogo.testcases.SearchPageTest">
+    <class name="com.yourlogo.testcases.RegestrationPageTest">
       <methods>   
-   <!--  <include name="VerifySortByLowestPriceTest" />
-    <include name="VerifykeywordFromSearchPageTest" />
-    <include name="ValidateMoreButtonTest" /> -->
-    <include name="ValidateQuickViewLinkTest" />
-    <!-- <include name="VerifyProductsPerPageTest" /> -->
-    <include name="VerifyAddToCartTest" />
+    <include name="verifyReadDatafromExcel" />
     </methods>
     </class>
     

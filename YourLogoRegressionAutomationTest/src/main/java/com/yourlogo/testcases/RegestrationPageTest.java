@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -12,6 +14,7 @@ import org.testng.annotations.Test;
 
 import com.yourlogo.pages.HomePage;
 import com.yourlogo.pages.LoginPage;
+import com.yourlogo.pages.MyAccountPage;
 import com.yourlogo.pages.RegistrationPage;
 import selenium.framework.testbase.TestBase;
 import selenium.framework.utilities.ReadExcel;
@@ -26,6 +29,7 @@ public class RegestrationPageTest extends TestBase {
 	HomePage homepage;
 	LoginPage loginpage;
 	RegistrationPage RegPage;
+	MyAccountPage myaccountpage;
 	
 	public RegestrationPageTest()
 	
@@ -41,7 +45,13 @@ public class RegestrationPageTest extends TestBase {
     homepage=new HomePage();
     
     loginpage=homepage.SignIn();
+    
+    try {
     RegPage=loginpage.Createaccnt("testjs2@gmail.com");
+    }catch (Exception e)
+    {
+    	
+    }
      
     
 	}
@@ -69,16 +79,30 @@ public class RegestrationPageTest extends TestBase {
 	
 
 	@Test(dataProvider ="Testdata")
-	public void verifyReadDatafromExcel(String title, String firstname, String lastname, String password,String DOB, String address, String city, String state, String zipcode,String country, String phone)
+	public void verifyReadDatafromExcel(String title, String firstname, String lastname,String email, String password,String DOB, String address, String city, String state, String zipcode,String country, String phone)
 	{
-		//RegPage.Registeration(firstname, lastname,  password,   address, city, state, zipcode, country, phone);
-		System.out.println(firstname);
+		RegPage = loginpage.Createaccnt(email);
+		RegPage.EnterDetails(title,firstname, lastname,  password, DOB,address, city, state, zipcode, country, phone);
+		myaccountpage=RegPage.clickRegesterButton();
+		String actual = myaccountpage.pagetitle();
+		
+		String expected = "My account - My Store";
+		
+		Assert.assertEquals(actual, expected);
+		
+		
+		
 	}
 
 	@AfterMethod
-	public void teardown()
+	public void getResult(ITestResult result) throws IOException
 	{
-		driver.quit();
+		if (result.getStatus()==ITestResult.FAILURE)
+				{
+			captureScreen(driver, result.getName());
+			System.out.println(result.getMethod().getMethodName()+ "Failed");
+		
+				}
 	}
 	
 }
