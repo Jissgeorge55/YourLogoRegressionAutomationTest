@@ -6,16 +6,19 @@
   </listeners>
   <test thread-count="2" name="Test in Chrome(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.yourlogo.testcases.RegestrationPageTest">
+      <class name="com.yourlogo.testcases.QuickViewTest">
         <methods>
+          <include name="VerifyProductAddtoCartTest"/>
           <include name="setup"/>
-          <include name="getResult"/>
-          <include name="verifyReadDatafromExcel" invocation-numbers="0"/>
-          <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.yourlogo.testcases.RegestrationPageTest -->
+      </class> <!-- com.yourlogo.testcases.QuickViewTest -->
     </classes>
   </test> <!-- Test in Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -33,7 +33,7 @@ public class ProductDescriptionPageTest extends TestBase {
 	}
 
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void setup()
 	{
 		homepage = new HomePage();
@@ -41,7 +41,7 @@ public class ProductDescriptionPageTest extends TestBase {
 		
 	}
 	
-	@Test
+	@Test(groups={"Smoke"})
 	public void VerifyAddtoCartTest()
 	{
 		String actual=productpage.addToCart();
@@ -65,7 +65,7 @@ public class ProductDescriptionPageTest extends TestBase {
 	}
 	
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void getResult(ITestResult result) throws IOException
 	{
 		if (result.getStatus()==ITestResult.FAILURE)

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests">
+<listeners>
+<listener class-name="selenium.framework.utilities.ExtendReportNG" />
+</listeners>
+
+
+
+  <test name="Test in Chrome">
+  <parameter name="browser" value="chrome"/>
+
+
+    <groups>
+<run>
+<include name="Smoke"/>
+</run>
+</groups>
+    
+
+    <classes>
+     
+    
+    
+    <class name="com.yourlogo.testcases.LoginPageTest"/>
+    <class name="com.yourlogo.testcases.SearchPageTest"/>
+    <class name="com.yourlogo.testcases.QuickViewTest"/>
+    <class name="com.yourlogo.testcases.ProductDescriptionPageTest"/>
+   
+    
+    </classes>
+    </test>
+    </suite>

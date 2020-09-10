@@ -23,7 +23,7 @@ public class HomePageTest extends TestBase {
 			super();           //to call the constructor of the super class ie Base
 		}
 		
-		@BeforeMethod
+		@BeforeMethod(alwaysRun=true)
 		public void setup()
 		{
 		
@@ -56,7 +56,7 @@ public class HomePageTest extends TestBase {
 	   
 	   
 	   
-		@AfterMethod
+		@AfterMethod(alwaysRun=true)
 		
 			public void teardown()
 			{

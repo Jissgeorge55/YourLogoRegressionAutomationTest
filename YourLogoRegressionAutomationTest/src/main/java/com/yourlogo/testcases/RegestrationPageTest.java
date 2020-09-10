@@ -38,7 +38,7 @@ public class RegestrationPageTest extends TestBase {
 		
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void setup()
 	{
 	//initialization();
@@ -94,7 +94,7 @@ public class RegestrationPageTest extends TestBase {
 		
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void getResult(ITestResult result) throws IOException
 	{
 		if (result.getStatus()==ITestResult.FAILURE)
