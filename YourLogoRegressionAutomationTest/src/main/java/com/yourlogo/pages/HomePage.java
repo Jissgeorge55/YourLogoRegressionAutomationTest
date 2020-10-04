@@ -32,6 +32,12 @@ public class HomePage extends TestBase {
 	@FindBy(xpath="//button[@class='btn btn-default button-search']")
 	WebElement Searchbutton;
 	
+	@FindBy(xpath ="//a[@title=\"View my shopping cart\"]")
+	WebElement Cart;
+	
+	@FindBy(className = "ajax_cart_block_remove_link")
+	WebElement remove_product;
+	
 	
 	
 	public HomePage()
@@ -80,5 +86,12 @@ public class HomePage extends TestBase {
 		 
 		 return new SearchPage();
 		 
+	 }
+	 
+	 public void deleteProduct()
+	 {
+		Cart.click();
+		remove_product.click();
+		
 	 }
 }

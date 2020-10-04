@@ -21,7 +21,7 @@ import selenium.framework.utilities.ReadConfigFile;
 
 public class ProductDescriptionPageTest extends TestBase {
 	
-	ReadConfigFile readconfig=new ReadConfigFile();
+	ReadConfigFile readconfig=new ReadConfigFile("config.properties");
 	HomePage homepage;
 	LoginPage loginpage;
 	MyAccountPage myaccountpage;

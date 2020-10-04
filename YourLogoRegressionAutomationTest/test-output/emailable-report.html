@@ -8,11 +8,24 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Failed suite [Suite]</th></tr>
-<tr><td><a href="#t0">Test in Chrome(failed)</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">51,290</td><td>Smoke</td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test in Chrome</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">49,803</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Failed suite [Suite]</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test in Chrome(failed) &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.yourlogo.testcases.QuickViewTest</td><td><a href="#m0">VerifyProductAddtoCartTest</a></td><td rowspan="1">1599745095043</td><td rowspan="1">14498</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test in Chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.yourlogo.testcases.CartPageTest</td><td><a href="#m0">VerifyTotalPriceTest</a></td><td rowspan="1">1601819714980</td><td rowspan="1">70</td></tr></tbody>
 </table>
-<h2>Test in Chrome(failed)</h2><h3 id="m0">com.yourlogo.testcases.QuickViewTest#VerifyProductAddtoCartTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test in Chrome</h2><h3 id="m0">com.yourlogo.testcases.CartPageTest#VerifyTotalPriceTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.yourlogo.pages.GetAPage.ProductPage(GetAPage.java:88)
+	at com.yourlogo.pages.SelectProduct.standardProduct(SelectProduct.java:26)
+	at com.yourlogo.testcases.CartPageTest.VerifyTotalPriceTest(CartPageTest.java:88)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

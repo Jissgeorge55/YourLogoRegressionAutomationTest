@@ -196,7 +196,7 @@ public class SearchPage extends TestBase {
 
 	public boolean moreButton()
 	{
-		elements.scrollAndHoverToElement(product1, driver);
+		elements.scrollAndHoverToElement(product1);
 		
 		more.click();
 		
@@ -216,7 +216,7 @@ public class SearchPage extends TestBase {
 	
 	public boolean quickView() throws InterruptedException
 	{
-		elements.scrollAndHoverToElement(product1, driver);
+		elements.scrollAndHoverToElement(product1);
 		
 		quickView.click();
 		
@@ -257,7 +257,7 @@ public class SearchPage extends TestBase {
 	}
 
 	public String addtocart() throws InterruptedException {
-		elements.scrollAndHoverToElement(product1, driver);
+		elements.scrollAndHoverToElement(product1);
 
 		addtocart.click();
 		Thread.sleep(2000);
@@ -267,7 +267,7 @@ public class SearchPage extends TestBase {
 	}
 
 	public boolean addtowishlist() {
-		elements.scrollAndHoverToElement(product1, driver);
+		elements.scrollAndHoverToElement(product1);
 		more.click();
 		WishListButton.click();
 		boolean result = WishlistSuccessMsg.isDisplayed();
@@ -281,7 +281,7 @@ public class SearchPage extends TestBase {
 	
 	public void scrollToProduct(WebElement product)
 	{
-		elements.scrollToElement(product,driver);
+		elements.scrollToElement(product);
 		//je.executeScript("arguments[0].scrollIntoView();", product);
 		Actions act = new Actions(driver);
 		act.moveToElement(product).build().perform();

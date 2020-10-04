@@ -19,6 +19,8 @@ public enum PageType {
    ("http://automationpractice.com/");
 	
 	
+	
+	
 	private String url;
 	
 	private PageType(String url)

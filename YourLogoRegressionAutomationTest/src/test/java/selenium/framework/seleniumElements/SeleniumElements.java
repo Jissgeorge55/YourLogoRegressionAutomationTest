@@ -164,18 +164,18 @@ public class SeleniumElements  {
 		actions.doubleClick(element);
 	}
 	
-	public void scrollToElement(WebElement element,Object driver)
+	public void scrollToElement(WebElement element)
 	{
-		JavascriptExecutor js = (JavascriptExecutor) (WebDriver) driver;
+		JavascriptExecutor js = (JavascriptExecutor)  driver;
 		js.executeScript("arguments[0].scrollIntoView();",element);
 	}
 	
 	
-	public void scrollAndHoverToElement(WebElement element,Object driver)
+	public void scrollAndHoverToElement(WebElement element)
 	{
-		JavascriptExecutor js = (JavascriptExecutor) (WebDriver) driver;
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();",element);
-		Actions act = new Actions((WebDriver) driver);
+		Actions act = new Actions( driver);
 		act.moveToElement(element).build().perform();
 	}
 	
