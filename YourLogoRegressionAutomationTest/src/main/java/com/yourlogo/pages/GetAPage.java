@@ -83,4 +83,9 @@ public class GetAPage extends TestBase {
 		
 	}
 	
+	public static void ProductPage(String url)
+	{
+		driver.get(url);
+	}
+	
 }

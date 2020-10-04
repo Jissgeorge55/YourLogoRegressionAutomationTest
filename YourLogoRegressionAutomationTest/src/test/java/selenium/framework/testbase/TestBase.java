@@ -30,7 +30,7 @@ public class TestBase {
 	public static Properties prop;
 	public static WebDriver driver;
 	
-	static ReadConfigFile readconfig = new ReadConfigFile();
+	static ReadConfigFile readconfig = new ReadConfigFile("config.properties");
 	public SeleniumElements elements = new SeleniumElements(driver);
 	
 	

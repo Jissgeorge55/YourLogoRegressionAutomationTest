@@ -1,5 +1,6 @@
 package selenium.framework.utilities;
 
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
 
@@ -7,12 +8,13 @@ public class ReadConfigFile {
 	
 Properties prop;
 	
-	public ReadConfigFile()
+	public ReadConfigFile(String file)
 	{
 		try {
 			
 			prop = new Properties();
-			InputStream in= getClass().getClassLoader().getResourceAsStream("resources/config.properties");
+			//InputStream in= getClass().getClassLoader().getResourceAsStream("resources/"+file);
+			FileInputStream in =new FileInputStream(System.getProperty("user.dir")+"/src/test/java/resources/"+file);
 			prop.load(in);
 			
 			if(prop==null)
@@ -70,5 +72,21 @@ Properties prop;
 		String topnav3= prop.getProperty("topNavigation3");
 		return topnav3;
 	}
+
+	public String getProductUrl(String key) {
+		String url = prop.getProperty(key);
+		return url;
+	}
+
+	public String getProductSize(String key) {
+		String size = prop.getProperty(key);
+		return size;
+	}
+	
+	public String getProductColour(String key) {
+		String colour = prop.getProperty(key);
+		return colour;
+	}
+	
 
 }

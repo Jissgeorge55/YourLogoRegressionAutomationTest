@@ -13,9 +13,9 @@
      
     
     
-    <class name="com.yourlogo.testcases.RegestrationPageTest">
+    <class name="com.yourlogo.testcases.CartPageTest">
       <methods>   
-    <include name="verifyReadDatafromExcel" />
+    <include name="VerifyTotalPriceTest" />
     </methods>
     </class>
     

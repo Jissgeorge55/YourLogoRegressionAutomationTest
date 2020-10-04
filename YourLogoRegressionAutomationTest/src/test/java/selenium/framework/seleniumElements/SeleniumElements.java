@@ -67,8 +67,7 @@ public class SeleniumElements  {
 		WebElement seleniumElement = (WebElement) element;
 		try {
 			try {
-			WebDriverWait wait = new WebDriverWait(driver, 5);
-			wait.until(ExpectedConditions.elementToBeClickable(seleniumElement));
+			explictWait(seleniumElement,3);
 			}catch (TimeoutException e)
 			{
 				
@@ -165,18 +164,18 @@ public class SeleniumElements  {
 		actions.doubleClick(element);
 	}
 	
-	public void scrollToElement(WebElement element,Object driver)
+	public void scrollToElement(WebElement element)
 	{
-		JavascriptExecutor js = (JavascriptExecutor) (WebDriver) driver;
+		JavascriptExecutor js = (JavascriptExecutor)  driver;
 		js.executeScript("arguments[0].scrollIntoView();",element);
 	}
 	
 	
-	public void scrollAndHoverToElement(WebElement element,Object driver)
+	public void scrollAndHoverToElement(WebElement element)
 	{
-		JavascriptExecutor js = (JavascriptExecutor) (WebDriver) driver;
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();",element);
-		Actions act = new Actions((WebDriver) driver);
+		Actions act = new Actions( driver);
 		act.moveToElement(element).build().perform();
 	}
 	

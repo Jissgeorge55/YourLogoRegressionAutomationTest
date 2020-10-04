@@ -19,7 +19,7 @@ import selenium.framework.utilities.ReadConfigFile;
 
 public class SearchPageTest extends TestBase {
 
-	ReadConfigFile readconfig=new ReadConfigFile();
+	ReadConfigFile readconfig=new ReadConfigFile("config.properties");
 	HomePage homepage;
 	SearchPage searchpage;
 	LoginPage loginpage;
