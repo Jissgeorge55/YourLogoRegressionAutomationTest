@@ -1,42 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="4" total="5" passed="0">
+<testng-results skipped="0" failed="1" ignored="11" total="18" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="49803" started-at="2020-10-04T13:54:27Z" finished-at="2020-10-04T13:55:17Z">
+  <suite name="Suite" duration-ms="375499" started-at="2020-10-24T13:44:53Z" finished-at="2020-10-24T13:51:09Z">
     <groups>
+      <group name="Smoke">
+        <method signature="LoginPageTest.ValidateLoginTest()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="ValidateLoginTest" class="com.yourlogo.testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.VerifyForgetPasswordtest()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="VerifyForgetPasswordtest" class="com.yourlogo.testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.VerifySignOutTest()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="VerifySignOutTest" class="com.yourlogo.testcases.LoginPageTest"/>
+        <method signature="ProductDescriptionPageTest.VerifyAddtoCartTest()[pri:0, instance:com.yourlogo.testcases.ProductDescriptionPageTest@1567f1]" name="VerifyAddtoCartTest" class="com.yourlogo.testcases.ProductDescriptionPageTest"/>
+        <method signature="QuickViewTest.VerifyProductAddtoCartTest()[pri:0, instance:com.yourlogo.testcases.QuickViewTest@1494225]" name="VerifyProductAddtoCartTest" class="com.yourlogo.testcases.QuickViewTest"/>
+        <method signature="SearchPageTest.VerifyAddToCartTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@6451e]" name="VerifyAddToCartTest" class="com.yourlogo.testcases.SearchPageTest"/>
+        <method signature="SearchPageTest.VerifykeywordFromSearchPageTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@6451e]" name="VerifykeywordFromSearchPageTest" class="com.yourlogo.testcases.SearchPageTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test name="Test in Chrome" duration-ms="49803" started-at="2020-10-04T13:54:27Z" finished-at="2020-10-04T13:55:17Z">
-      <class name="com.yourlogo.testcases.CartPageTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.yourlogo.testcases.CartPageTest@1bbe1b6]" name="setup" is-config="true" duration-ms="42099" started-at="2020-10-04T13:54:27Z" finished-at="2020-10-04T13:55:09Z">
+    <test name="Test in Firefox" duration-ms="375499" started-at="2020-10-24T13:44:53Z" finished-at="2020-10-24T13:51:09Z">
+      <class name="com.yourlogo.testcases.QuickViewTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.yourlogo.testcases.QuickViewTest@1494225]" name="setup" is-config="true" duration-ms="38675" started-at="2020-10-24T13:49:14Z" finished-at="2020-10-24T13:49:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="precondition()[pri:0, instance:com.yourlogo.testcases.CartPageTest@1bbe1b6]" name="precondition" is-config="true" duration-ms="5350" started-at="2020-10-04T13:55:09Z" finished-at="2020-10-04T13:55:14Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.QuickViewTest@1494225]" name="setup" is-config="true" duration-ms="6129" started-at="2020-10-24T13:49:52Z" finished-at="2020-10-24T13:49:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method status="FAIL" signature="VerifyTotalPriceTest()[pri:0, instance:com.yourlogo.testcases.CartPageTest@1bbe1b6]" name="VerifyTotalPriceTest" duration-ms="70" started-at="2020-10-04T13:55:14Z" finished-at="2020-10-04T13:55:15Z">
-          <exception class="java.lang.NullPointerException">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyProductAddtoCartTest()[pri:0, instance:com.yourlogo.testcases.QuickViewTest@1494225]" name="VerifyProductAddtoCartTest" duration-ms="17306" started-at="2020-10-24T13:49:58Z" finished-at="2020-10-24T13:50:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyProductAddtoCartTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.QuickViewTest@1494225]" name="teardown" is-config="true" duration-ms="8178" started-at="2020-10-24T13:50:16Z" finished-at="2020-10-24T13:50:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.yourlogo.testcases.QuickViewTest -->
+      <class name="com.yourlogo.testcases.SearchPageTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.yourlogo.testcases.SearchPageTest@6451e]" name="setup" is-config="true" duration-ms="48986" started-at="2020-10-24T13:47:53Z" finished-at="2020-10-24T13:48:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@6451e]" name="setup" is-config="true" duration-ms="5784" started-at="2020-10-24T13:48:42Z" finished-at="2020-10-24T13:48:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyAddToCartTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@6451e]" name="VerifyAddToCartTest" duration-ms="11718" started-at="2020-10-24T13:48:47Z" finished-at="2020-10-24T13:48:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAddToCartTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.SearchPageTest@6451e]" name="getResult" is-config="true" duration-ms="0" started-at="2020-10-24T13:48:59Z" finished-at="2020-10-24T13:48:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyAddToCartTest status=SUCCESS method=SearchPageTest.VerifyAddToCartTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@6451e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@6451e]" name="setup" is-config="true" duration-ms="3480" started-at="2020-10-24T13:48:59Z" finished-at="2020-10-24T13:49:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifykeywordFromSearchPageTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@6451e]" name="VerifykeywordFromSearchPageTest" duration-ms="2607" started-at="2020-10-24T13:49:03Z" finished-at="2020-10-24T13:49:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifykeywordFromSearchPageTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@6451e]" name="teardown" is-config="true" duration-ms="8489" started-at="2020-10-24T13:49:05Z" finished-at="2020-10-24T13:49:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.SearchPageTest@6451e]" name="getResult" is-config="true" duration-ms="0" started-at="2020-10-24T13:49:05Z" finished-at="2020-10-24T13:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifykeywordFromSearchPageTest status=SUCCESS method=SearchPageTest.VerifykeywordFromSearchPageTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@6451e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.yourlogo.testcases.SearchPageTest -->
+      <class name="com.yourlogo.testcases.ProductDescriptionPageTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.yourlogo.testcases.ProductDescriptionPageTest@1567f1]" name="setup" is-config="true" duration-ms="31611" started-at="2020-10-24T13:50:24Z" finished-at="2020-10-24T13:50:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.ProductDescriptionPageTest@1567f1]" name="setup" is-config="true" duration-ms="5210" started-at="2020-10-24T13:50:56Z" finished-at="2020-10-24T13:51:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyAddtoCartTest()[pri:0, instance:com.yourlogo.testcases.ProductDescriptionPageTest@1567f1]" name="VerifyAddtoCartTest" duration-ms="1442" started-at="2020-10-24T13:51:01Z" finished-at="2020-10-24T13:51:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAddtoCartTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.ProductDescriptionPageTest@1567f1]" name="teardown" is-config="true" duration-ms="6232" started-at="2020-10-24T13:51:02Z" finished-at="2020-10-24T13:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.ProductDescriptionPageTest@1567f1]" name="getResult" is-config="true" duration-ms="0" started-at="2020-10-24T13:51:02Z" finished-at="2020-10-24T13:51:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyAddtoCartTest status=SUCCESS method=ProductDescriptionPageTest.VerifyAddtoCartTest()[pri:0, instance:com.yourlogo.testcases.ProductDescriptionPageTest@1567f1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.yourlogo.testcases.ProductDescriptionPageTest -->
+      <class name="com.yourlogo.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="setup" is-config="true" duration-ms="113574" started-at="2020-10-24T13:44:54Z" finished-at="2020-10-24T13:46:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="setup" is-config="true" duration-ms="6717" started-at="2020-10-24T13:46:48Z" finished-at="2020-10-24T13:46:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="ValidateLoginTest()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="ValidateLoginTest" duration-ms="6198" started-at="2020-10-24T13:46:54Z" finished-at="2020-10-24T13:47:01Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[null value in entry: url=null]]>
+              <![CDATA[expected [My account - My Store] but found [Login - My Store]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
-at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
-at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
-at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
-at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at com.yourlogo.pages.GetAPage.ProductPage(GetAPage.java:88)
-at com.yourlogo.pages.SelectProduct.standardProduct(SelectProduct.java:26)
-at com.yourlogo.testcases.CartPageTest.VerifyTotalPriceTest(CartPageTest.java:88)
+              <![CDATA[java.lang.AssertionError: expected [My account - My Store] but found [Login - My Store]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.yourlogo.testcases.LoginPageTest.ValidateLoginTest(LoginPageTest.java:66)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,26 +183,64 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:62
 at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyTotalPriceTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.CartPageTest@1bbe1b6]" name="getResult" is-config="true" duration-ms="527" started-at="2020-10-04T13:55:15Z" finished-at="2020-10-04T13:55:15Z">
+        </test-method> <!-- ValidateLoginTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="getResult" is-config="true" duration-ms="8536" started-at="2020-10-24T13:47:01Z" finished-at="2020-10-24T13:47:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyTotalPriceTest status=FAILURE method=CartPageTest.VerifyTotalPriceTest()[pri:0, instance:com.yourlogo.testcases.CartPageTest@1bbe1b6] output={null}]]]>
+                <![CDATA[[TestResult name=ValidateLoginTest status=FAILURE method=LoginPageTest.ValidateLoginTest()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.CartPageTest@1bbe1b6]" name="teardown" is-config="true" duration-ms="1341" started-at="2020-10-04T13:55:15Z" finished-at="2020-10-04T13:55:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="setup" is-config="true" duration-ms="1948" started-at="2020-10-24T13:47:09Z" finished-at="2020-10-24T13:47:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyForgetPasswordtest()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="VerifyForgetPasswordtest" duration-ms="4060" started-at="2020-10-24T13:47:11Z" finished-at="2020-10-24T13:47:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyForgetPasswordtest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="getResult" is-config="true" duration-ms="5018" started-at="2020-10-24T13:47:15Z" finished-at="2020-10-24T13:47:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyForgetPasswordtest status=SUCCESS method=LoginPageTest.VerifyForgetPasswordtest()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="setup" is-config="true" duration-ms="3694" started-at="2020-10-24T13:47:20Z" finished-at="2020-10-24T13:47:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifySignOutTest()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="VerifySignOutTest" duration-ms="8692" started-at="2020-10-24T13:47:24Z" finished-at="2020-10-24T13:47:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySignOutTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="getResult" is-config="true" duration-ms="5016" started-at="2020-10-24T13:47:33Z" finished-at="2020-10-24T13:47:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifySignOutTest status=SUCCESS method=LoginPageTest.VerifySignOutTest()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.LoginPageTest@d818d1]" name="teardown" is-config="true" duration-ms="14856" started-at="2020-10-24T13:47:38Z" finished-at="2020-10-24T13:47:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.yourlogo.testcases.CartPageTest -->
-    </test> <!-- Test in Chrome -->
+      </class> <!-- com.yourlogo.testcases.LoginPageTest -->
+    </test> <!-- Test in Firefox -->
   </suite> <!-- Suite -->
 </testng-results>

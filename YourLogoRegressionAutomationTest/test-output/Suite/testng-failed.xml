@@ -4,18 +4,23 @@
   <listeners>
     <listener class-name="selenium.framework.utilities.ExtendReportNG"/>
   </listeners>
-  <test thread-count="2" name="Test in Chrome(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="2" name="Test in Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.yourlogo.testcases.CartPageTest">
+      <class name="com.yourlogo.testcases.LoginPageTest">
         <methods>
+          <include name="ValidateLoginTest"/>
           <include name="getResult"/>
-          <include name="VerifyTotalPriceTest"/>
+          <include name="setup"/>
           <include name="teardown"/>
-          <include name="precondition"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.yourlogo.testcases.CartPageTest -->
+      </class> <!-- com.yourlogo.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- Test in Chrome(failed) -->
+  </test> <!-- Test in Firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->
