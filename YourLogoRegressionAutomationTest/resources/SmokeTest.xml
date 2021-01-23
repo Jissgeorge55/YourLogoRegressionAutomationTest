@@ -9,6 +9,9 @@
 
   <test name="Test in Chrome">
   <parameter name="browser" value="chrome"/>
+  <parameter name="runtype" value="saucelabs"/>
+  <parameter name="version" value="87"/>
+  <parameter name="platform" value="windows 10"/>
 
 
     <groups>

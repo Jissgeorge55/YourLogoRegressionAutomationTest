@@ -4,23 +4,21 @@
   <listeners>
     <listener class-name="selenium.framework.utilities.ExtendReportNG"/>
   </listeners>
-  <test thread-count="2" name="Test in Firefox(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
-    <groups>
-      <run>
-        <include name="Smoke"/>
-      </run>
-    </groups>
+  <test thread-count="2" name="Test in Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="runtype" value="saurcelabs"/>
+    <parameter name="version" value="87"/>
+    <parameter name="platform" value="windows 10"/>
     <classes>
-      <class name="com.yourlogo.testcases.LoginPageTest">
+      <class name="com.yourlogo.testcases.SearchPageTest">
         <methods>
-          <include name="ValidateLoginTest"/>
           <include name="getResult"/>
-          <include name="setup"/>
+          <include name="VerifyAddToCartTest"/>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.yourlogo.testcases.LoginPageTest -->
+      </class> <!-- com.yourlogo.testcases.SearchPageTest -->
     </classes>
-  </test> <!-- Test in Firefox(failed) -->
+  </test> <!-- Test in Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->
