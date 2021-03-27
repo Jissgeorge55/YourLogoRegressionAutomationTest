@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.yourlogo.testcases.SearchPageTest" hash-for-method="VerifyAddToCartTest">VerifyAddToCartTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.yourlogo.testcases.HomePageTest" hash-for-method="VerifyHomePageLogotest">VerifyHomePageLogotest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -120,14 +120,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.yourlogo.testcases.SearchPageTest</span>
+              <span class="class-name">com.yourlogo.testcases.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyAddToCartTest">
-                  </a> <!-- VerifyAddToCartTest -->
-                  <span class="method-name">VerifyAddToCartTest</span>
+                  <a name="VerifyHomePageLogotest">
+                  </a> <!-- VerifyHomePageLogotest -->
+                  <span class="method-name">VerifyHomePageLogotest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -151,11 +151,11 @@
     &lt;parameter name=&quot;version&quot; value=&quot;87&quot;/&gt;
     &lt;parameter name=&quot;platform&quot; value=&quot;windows 10&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.yourlogo.testcases.SearchPageTest&quot;&gt;
+      &lt;class name=&quot;com.yourlogo.testcases.HomePageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;VerifyAddToCartTest&quot;/&gt;
+          &lt;include name=&quot;VerifyHomePageLogotest&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.yourlogo.testcases.SearchPageTest --&gt;
+      &lt;/class&gt; &lt;!-- com.yourlogo.testcases.HomePageTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test in Chrome --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -179,14 +179,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Smoke</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">VerifyAddToCartTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -205,14 +197,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyAddToCartTest')
-data.setCell(0, 2, 'com.yourlogo.testcases.SearchPageTest')
-data.setCell(0, 3, 13148);
+data.setCell(0, 1, 'VerifyHomePageLogotest')
+data.setCell(0, 2, 'com.yourlogo.testcases.HomePageTest')
+data.setCell(0, 3, 91833);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -227,24 +219,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.yourlogo.testcases.SearchPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">VerifyProductsPerPageTest</span>
-                <br/>
-                <span class="ignored-method-name">ValidateMoreButtonTest</span>
-                <br/>
-                <span class="ignored-method-name">VerifySortByLowestPriceTest</span>
-                <br/>
-                <span class="ignored-method-name">ValidateQuickViewLinkTest</span>
-                <br/>
-                <span class="ignored-method-name">VerifykeywordFromSearchPageTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -253,27 +230,23 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.yourlogo.testcases.SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.yourlogo.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome, saucelabs, 87, windows 10)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">22290 ms</span>
+                <span class="method-start">19569 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">VerifyAddToCartTest</span>
-                <span class="method-start">27735 ms</span>
+                <span class="method-name">VerifyHomePageLogotest</span>
+                <span class="method-start">19595 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=VerifyAddToCartTest status=SUCCESS method=SearchPageTest.VerifyAddToCartTest()[pri:...)</span>
-                <span class="method-start">40939 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">40940 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">111443 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

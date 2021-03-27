@@ -6,19 +6,18 @@
   </listeners>
   <test thread-count="2" name="Test in Chrome(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
-    <parameter name="runtype" value="saurcelabs"/>
+    <parameter name="runtype" value="saucelabs"/>
     <parameter name="version" value="87"/>
     <parameter name="platform" value="windows 10"/>
     <classes>
-      <class name="com.yourlogo.testcases.SearchPageTest">
+      <class name="com.yourlogo.testcases.HomePageTest">
         <methods>
-          <include name="getResult"/>
-          <include name="VerifyAddToCartTest"/>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="VerifyHomePageLogotest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.yourlogo.testcases.SearchPageTest -->
+      </class> <!-- com.yourlogo.testcases.HomePageTest -->
     </classes>
   </test> <!-- Test in Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->
