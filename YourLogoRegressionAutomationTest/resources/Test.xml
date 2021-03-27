@@ -15,9 +15,9 @@
 
 <classes>
     
-    <class name="com.yourlogo.testcases.SearchPageTest">
+    <class name="com.yourlogo.testcases.HomePageTest">
     <methods>
-    <include name="VerifyAddToCartTest"/>
+    <include name="VerifyHomePageLogotest"/>
     </methods>
     </class>
     

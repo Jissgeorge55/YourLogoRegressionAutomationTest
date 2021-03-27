@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.yourlogo.pages.HomePage;
+import com.yourlogo.pages.HomePage1;
 import com.yourlogo.pages.LoginPage;
 import selenium.framework.testbase.TestBase;
 
@@ -15,7 +16,7 @@ public class HomePageTest extends TestBase {
 	
 	
 
-	HomePage homepage;
+	HomePage1 homepage;
     LoginPage loginpage;
 	
 		public HomePageTest()
@@ -27,11 +28,11 @@ public class HomePageTest extends TestBase {
 		public void setup()
 		{
 		
-		homepage=new HomePage();
+		homepage=new HomePage1();
 		}
 		
 		
-		@Test
+	/*	@Test
 		
 		public void VerifyHomePagetitletest()
 		{
@@ -39,7 +40,7 @@ public class HomePageTest extends TestBase {
 			String title= homepage.validatetitle();
 			Assert.assertEquals(title, "My Store");
 		}
-		
+		*/
 		
 	   @Test
 	   public void VerifyHomePageLogotest()
@@ -48,12 +49,12 @@ public class HomePageTest extends TestBase {
 		 Assert.assertTrue(flag);  
 	   }
 		
-	   @Test
+	/*   @Test
 	   public void VerifyHomePageSignInbuttonTest()
 	   {
 		   loginpage= homepage.SignIn();
 	   }
-	   
+	   */
 	   
 	   
 		@AfterMethod(alwaysRun=true)

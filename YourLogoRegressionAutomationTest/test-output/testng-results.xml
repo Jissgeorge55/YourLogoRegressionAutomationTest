@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="42844" started-at="2021-01-23T09:15:32Z" finished-at="2021-01-23T09:16:14Z">
+  <suite name="Suite" duration-ms="112305" started-at="2021-02-16T12:39:34Z" finished-at="2021-02-16T12:41:26Z">
     <groups>
-      <group name="Smoke">
-        <method signature="SearchPageTest.VerifyAddToCartTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@1bbe1b6]" name="VerifyAddToCartTest" class="com.yourlogo.testcases.SearchPageTest"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test name="Test in Chrome" duration-ms="42844" started-at="2021-01-23T09:15:32Z" finished-at="2021-01-23T09:16:14Z">
-      <class name="com.yourlogo.testcases.SearchPageTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.yourlogo.testcases.SearchPageTest@1bbe1b6]" name="setup" is-config="true" duration-ms="22271" started-at="2021-01-23T09:15:32Z" finished-at="2021-01-23T09:15:54Z">
+    <test name="Test in Chrome" duration-ms="112305" started-at="2021-02-16T12:39:34Z" finished-at="2021-02-16T12:41:26Z">
+      <class name="com.yourlogo.testcases.HomePageTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.yourlogo.testcases.HomePageTest@8d971b]" name="setup" is-config="true" duration-ms="19560" started-at="2021-02-16T12:39:34Z" finished-at="2021-02-16T12:39:54Z">
           <params>
             <param index="0">
               <value>
@@ -36,30 +33,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@1bbe1b6]" name="setup" is-config="true" duration-ms="5445" started-at="2021-01-23T09:15:54Z" finished-at="2021-01-23T09:16:00Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.yourlogo.testcases.HomePageTest@8d971b]" name="setup" is-config="true" duration-ms="26" started-at="2021-02-16T12:39:54Z" finished-at="2021-02-16T12:39:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyAddToCartTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@1bbe1b6]" name="VerifyAddToCartTest" duration-ms="13148" started-at="2021-01-23T09:16:00Z" finished-at="2021-01-23T09:16:13Z">
+        <test-method status="PASS" signature="VerifyHomePageLogotest()[pri:0, instance:com.yourlogo.testcases.HomePageTest@8d971b]" name="VerifyHomePageLogotest" duration-ms="91833" started-at="2021-02-16T12:39:54Z" finished-at="2021-02-16T12:41:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyAddToCartTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.yourlogo.testcases.SearchPageTest@1bbe1b6]" name="getResult" is-config="true" duration-ms="0" started-at="2021-01-23T09:16:13Z" finished-at="2021-01-23T09:16:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyAddToCartTest status=SUCCESS method=SearchPageTest.VerifyAddToCartTest()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@1bbe1b6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.SearchPageTest@1bbe1b6]" name="teardown" is-config="true" duration-ms="1500" started-at="2021-01-23T09:16:13Z" finished-at="2021-01-23T09:16:14Z">
+        </test-method> <!-- VerifyHomePageLogotest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.yourlogo.testcases.HomePageTest@8d971b]" name="teardown" is-config="true" duration-ms="547" started-at="2021-02-16T12:41:26Z" finished-at="2021-02-16T12:41:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.yourlogo.testcases.SearchPageTest -->
+      </class> <!-- com.yourlogo.testcases.HomePageTest -->
     </test> <!-- Test in Chrome -->
   </suite> <!-- Suite -->
 </testng-results>
